@@ -6,7 +6,7 @@ metadata:
     name: index-web-service
     app: demo-web-page
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   ports:
     - port: 80
       targetPort: 80
