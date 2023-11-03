@@ -55,7 +55,7 @@ spec:
     stage('Build and push image with Container Builder') {
       steps {
         container('gcloud') {
-          sh "cd Dockerfile"
+          sh "cd yaml_files"
           sh "gcloud config list"
           sh "gcloud config set project ${PROJECT}"
           sh "gcloud config set account gke-admin@intrepid-league-397203.iam.gserviceaccount.com"
